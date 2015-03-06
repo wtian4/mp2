@@ -1,6 +1,6 @@
 @import url('http://fonts.googleapis.com/css?family=Bree+Serif|Merriweather');
 @import url('http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css');
-
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
 
 h1 {
   font-size: 2.2rem;
@@ -10,5 +10,167 @@ h1 {
 .test {
   font-size: 1.2rem;
   color: $blue;
+
 }
 
+.tst {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: $font_primary;
+}
+
+.UltraThin {
+  font-weight: 100;
+  font-family: $font_primary;
+}
+
+.Thin {
+  font-weight: 300;
+  font-family: $font_primary;
+}
+
+.Normal {
+  font-weight: 400;
+  font-family: $font_primary;
+}
+
+.Bold {
+  font-weight: 700;
+  font-family: $font_primary;
+}
+
+.UltraBold {
+  font-weight: 900;
+  font-family: $font_primary;
+}
+
+.orbit-timer {
+  left: -10000px;
+  top: auto;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+}
+
+
+.imageText {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  
+  //top: XX -- is set by javascript to be responsive
+}
+
+.imageTitleText {
+  font-weight: 900;
+  font-family: $font_primary;
+  color: $white;
+  font-size: 3rem;
+}
+
+.imageDescription {
+  font-weight: 400;
+  font-family: $font_primary;
+  color: $white;
+  font-size: 1.2rem;
+}
+
+.getStarted {
+
+
+}
+
+.buttonText {
+  font-weight: 400;
+  font-family: $font_primary;
+  color: $white;
+}
+
+.videoText {
+  font-weight: 700;
+  font-family: $font_primary;
+  color: $black;
+  font-size: 2rem;
+  line-height: 70%;
+}
+
+.videoDescription {
+  font-weight: 300;
+  font-family: $font_primary;
+  color: $gray;
+  font-size: 1.3rem;
+  line-height: 90%;
+
+}
+
+#margintop {
+  margin-top: 3em;
+}
+
+#margintop-5 {
+  margin-top: 5em;
+}
+
+
+#modalThumbnail {
+  border-radius: $default-border-radius;
+
+}
+
+#borderline {
+  border-bottom: solid 1px $gray;
+}
+
+.columnText {
+  font-weight: 700;
+  font-family: $font_primary;
+  color: $black;
+  font-size: 2rem;
+}
+
+.whyText {
+  font-weight: 400;
+  font-family: $font_primary;
+  color: $black;
+  font-size: 1.2rem;
+
+}
+
+.whyDescription {
+  font-weight: 300;
+  font-family: $font_primary;
+  color: $gray;
+}
+
+.admissionImage {
+  background: url("http://i.imgur.com/1t7FVrI.jpg");
+  border-radius: 6px;
+  width: 100%;
+  height: 30em;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.bgText {
+  font-weight: 700;
+  font-family: $font_primary;
+  color: $white;
+  font-size: 3rem;
+
+}
+
+.socialText {
+  font-weight: 400;
+  font-family: $font_primary;
+  color: $black;
+  font-size: 2.2rem;
+}
+
+.socialIcons {
+    cursor: pointer;
+    color: $gray;
+
+}

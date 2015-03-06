@@ -7,54 +7,151 @@
   <script src="./js/controllers.js"></script>
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
-  
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body>
+	<div class="contain-to-grid fixed">
+		<nav class="top-bar" data-topbar role="navigation">
+		  <ul class="title-area">
+		    <li class="name">
+		      <h1><a href="#"><span class="UltraBold">University of Illinois</span><span class="Normal"> Urbana-Champaign</span></a></h1>
+		    </li>
+		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+		    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+		  </ul>
 
-	<nav class="top-bar" data-topbar role="navigation">
-	  <ul class="title-area">
-	    <li class="name">
-	      <h1><a href="#">MP2</a></h1>
-	    </li>
-	     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-	    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-	  </ul>
+		  <section class="top-bar-section">
+		  	  <!-- Right Nav Section -->
+		    <ul class="right">
+		      <li class="active"><a href="#"><span class="Bold">Discover</span></a></li>
+		      <li class="active"><a href="#"><span class="Bold">Reasons</span></a></li>
+		      <li class="active"><a href="#"><span class="Bold">Apply</span></a></li>
+		      <li class="active"><a href="#"><span class="Bold">Contact</span></a></li>
 
-	  <section class="top-bar-section">
-	    <!-- Left Nav Section -->
-	    <ul class="left">
-	      <li><a href="https://courses.engr.illinois.edu/cs498rk1/index.html">CS498RK</a></li>
-	    </ul>
-	  </section>
-	</nav>
 
-	<div class="row" ng-app = "demoApp">
-		<div class="panel small-centered columns small-12 medium-4">
-    	<input id="nameInput" ng-model="name" placeholder="Your Name" autofocus>
-	
-		<h3>Hello, {{name}}</h3>
+		    </ul>
+		  </section>
+		</nav>
+	</div>
 
+
+	<ul class="example-orbit" data-orbit data-options="animation: 'fade'; slide_number: false; timer_speed: 2000; pause_on_hover: false; bullets: false;">
+	  <li>
+	    <img src="./bg.jpg" alt="slide 1" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
+	  </li>
+	  <li class="active">
+	    <img src="./bg2.jpg" alt="slide 2" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
+
+	  </li>
+	  <li>
+	    <img src="./bg3.jpg" alt="slide 3" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
+
+	  </li>
+	  <li>
+	    <img src="./bg4.jpg" alt="slide 3" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
+
+	  </li>
+	</ul>
+
+	<div class="row" style="margin-top: 3em">
+		<div class="large-1 columns"></div>
+		<div class="large-7 large-offset-1 columns" id="videoModalContainer">
+			<span class="videoText">A community where students and faculty are actively integrated</span><br><span class="videoDescription">See how we combine physics and pop culture and demonstrate our school pride through meaningful traditions. It's not just about increasing ranking numbers, but about fostering exclusive experiences.</span>
+		</div>
+		<div class="large-3 columns text-center" >
+			<a href="#" data-reveal-id="videoModal"><img id="modalThumbnail" src="http://i.imgur.com/WTMH5r7.jpg" /></a>
+
+			<div id="videoModal" class="reveal-modal large" data-reveal="">
+			  <div class="flex-video widescreen vimeo" style="display: block;">
+			    <iframe width="1280" height="720" src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0" frameborder="0" allowfullscreen="" data-src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0"></iframe>
+			  </div>
+
+			  <a class="close-reveal-modal">&#215;</a>
+			</div>
+		</div>
+		<div class="large-1 columns"></div>
+	</div>
+
+	<div class="row" style="margin-top: 3em">
+		<div class="large-12 columns" id="borderline"></div>
+
+	</div>
+
+
+	<div class="row" style="margin-top: 3em;">
+		<div class="large-12 columns text-center"><span class="columnText">Why Orange and Blue</span></div>
+
+	</div>
+
+	<div class="row" style="margin-top: 5em;">
+		<div class="large-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
+			<span class="whyText">Leadership</span><br>
+			<span class="whyDescription">Get Involved and Lead in One of Thousands of Student Organizations</span>
+		</div>
+		<div class="large-4 columns text-center"><i class="fa fa-university fa-3x"></i><br>
+			<span class="whyText">Education</span><br>
+			<span class="whyDescription">Receive a Degree from a Top Public School in the Nation</span>
+		</div>
+		<div class="large-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
+			<span class="whyText">Opportunity</span><br>
+			<span class="whyDescription">Semiannual Career Fairs and Networking Events from Fortune 500 Companies</span>
 		</div>
 	</div>
-	<div class="row">
-		<div class="alert columns small-12 large-6">
-			<div><img src="http://lorempixel.com/400/200/cats" /></div>
-
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit velit temporibus, fugit recusandae aliquid officiis molestias possimus reprehenderit quos. Facere dolores, nulla optio recusandae. Voluptatibus aut esse nulla saepe sit ut amet, neque officia officiis quam ea ex adipisci, quaerat, eligendi veniam iste temporibus. Aperiam ea quos fugiat provident, voluptatum reiciendis mollitia voluptates, odio quam at, deserunt animi voluptas odit aliquid saepe voluptate distinctio excepturi. Deserunt, id esse fuga cum accusantium eos obcaecati odit veritatis molestias illum sequi repellat, quisquam quasi architecto velit blanditiis perferendis, nulla eligendi non laboriosam. Eligendi sint, voluptatem ipsam dolore eum temporibus dicta, quaerat ea molestias placeat, asperiores minima sit explicabo! Repellat qui ducimus ipsum. Dignissimos at, aliquid vitae asperiores omnis provident voluptatibus, itaque delectus. Porro corrupti vel culpa, delectus in doloremque nam ratione aliquid ullam non iusto magnam, repudiandae, magni a quasi voluptatum inventore exercitationem quibusdam sint autem totam ex quia possimus. Similique ad fugiat eligendi magnam ab, ex nulla unde eos, tempora quis consequatur maxime inventore perferendis voluptatem non nam dignissimos voluptatum dolor quasi quidem molestias maiores doloribus. Omnis ipsa fugit amet! Eum repellat deleniti fuga omnis in maiores rem iusto, qui quasi ipsum illum odit laudantium molestiae, nostrum ipsam fugit animi atque! Non.
+	<div class="row" style="margin-top: 4em;">
+		<div class="large-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
+			<span class="whyText">Network</span><br>
+			<span class="whyDescription">Create New Relationships and Form Connections for the Future</span>
 		</div>
-		<div class="columns small-12 large-6">
-	  	<div><img src="http://lorempixel.com/400/200/nature" />	</div>
-	  	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt nobis facere sint placeat necessitatibus reprehenderit amet quas minima beatae illo nemo labore, maxime adipisci, accusamus voluptates repudiandae quia, ut excepturi ea quis obcaecati molestias error architecto unde? Hic vel facere porro magnam ipsam omnis eos ducimus, architecto velit beatae modi natus sunt suscipit quo optio qui repellat, blanditiis consequuntur. Fuga omnis porro quis inventore in voluptatum veritatis illum beatae rem. Labore nam saepe cupiditate quod, itaque quidem libero, quas tempore incidunt, quos earum repudiandae recusandae quia voluptas ducimus inventore, expedita. Alias minima, commodi aut, aspernatur laborum quae mollitia pariatur suscipit ad accusamus a ipsam fuga necessitatibus voluptas esse error reprehenderit provident. Sequi architecto ipsum qui enim labore sunt incidunt ullam pariatur. Minus porro error ipsa perferendis exercitationem debitis dicta asperiores nostrum cum voluptas qui dolores odit numquam incidunt cumque eos nemo architecto repudiandae adipisci, eius ut, aut suscipit minima perspiciatis consectetur. Ratione quisquam neque voluptatem? Qui, aspernatur iste quaerat iure. Debitis nobis minus animi mollitia libero temporibus perferendis ratione, inventore ullam, eos ut porro, velit quibusdam rerum possimus, ex! Quidem consectetur obcaecati ad veritatis. Velit illum aliquid tenetur, nisi illo quaerat labore nemo id sequi eveniet consequuntur. Voluptate, similique, rem!</div>
+		<div class="large-4 columns text-center"><i class="fa fa-university fa-3x"></i><br>
+			<span class="whyText">Research</span><br>
+			<span class="whyDescription">Help Solve Some of the World's Most Difficult Problems</span>
+		</div>
+		<div class="large-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
+			<span class="whyText">Competition</span><br>
+			<span class="whyDescription">Join the Big 10 Family and Support Our Huge School Spirit</span>
+		</div>
 	</div>
- 
+
+	<div class="row" style="margin-top: 5em">
+		<div class="large-12 columns"><div class="admissionImage">
+			<div class="imageText"><span class="bgText">Become an Illini Today!</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Learn More</span></a></div>
+
+		</div></div>
+
+	</div>
 
 
-  <script src="./js/script.js"></script>
+	<div class="row" style="margin-top: 3em;">
+		<div class="large-12 columns text-center"><span class="socialText">Follow Us On Social Media</span></div>
+
+	</div>
+	<div class="row" style="margin-top: .5em; margin-bottom: 3em;">
+		<div class="large-4 columns"></div>
+		<div class="large-1 columns large-offset-4 text-center"><a href="https://www.facebook.com/illinois.edu"><i class="fa fa-facebook-square fa-3x socialIcons"></i></a></div>
+		 <div class="large-1 columns text-center"><a href="https://twitter.com/illinois_alma"><i class="fa fa-twitter-square fa-3x socialIcons"></i></a></div>
+
+    	<div class="large-1 columns text-center"><a href="https://www.linkedin.com/edu/university-of-illinois-at-urbana-champaign-18321"><i class="fa fa-linkedin-square fa-3x socialIcons"></i></a></div>
+
+    	<div class="large-1 columns text-center"><a href="https://plus.google.com/115050777244952217317"><i class="fa fa-google-plus-square fa-3x socialIcons"></i></a></div>
+		<div class="large-4 columns"></div>
+
+	</div>
+
   <script src="./lib/jquery-2.1.3.min/index.js"></script>
+  <script src="./js/script.js"></script>
   <script src="./foundation/js/foundation.min.js"></script>
   <script src="http://localhost:35729/livereload.js"></script>
+   <script>
+    $(document).foundation();
+  </script>
 </body>
 </html>

@@ -238,7 +238,7 @@
         container.on('click', '.' + settings.slides_container_class + ' [data-orbit-slide]', self.link_bullet);
       }
 
-      container.on('click', self.toggle_timer);
+      //REMOVES PAUSING SLIDESHOW ON CLICK container.on('click', self.toggle_timer);
       if (settings.swipe) {
         container.on('touchstart.fndtn.orbit', function (e) {
           if (!e.touches) {e = e.originalEvent;}
@@ -284,7 +284,7 @@
       }
       container.on('mouseenter.fndtn.orbit', function (e) {
         if (settings.timer && settings.pause_on_hover) {
-          self.stop_timer();
+          //prevents touchSCREENS 1!!self.stop_timer();
         }
       })
       .on('mouseleave.fndtn.orbit', function (e) {
