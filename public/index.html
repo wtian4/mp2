@@ -14,12 +14,12 @@
 </head>
 
 
-<body>
-	<div class="contain-to-grid fixed">
+<body style="overflow-x: hidden">
+	<div class="contain-to-grid sticky fixed">
 		<nav class="top-bar" data-topbar role="navigation">
 		  <ul class="title-area">
 		    <li class="name">
-		      <h1><a href="#"><span class="UltraBold">University of Illinois</span><span class="Normal"> Urbana-Champaign</span></a></h1>
+		      <h1><a href="#home" id="navScrollHome"><span class="UltraBold">University of Illinois</span><span class="Normal" id="collegetitle"> Urbana-Champaign</span></a></h1>
 		    </li>
 		     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
 		    <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
@@ -28,57 +28,52 @@
 		  <section class="top-bar-section">
 		  	  <!-- Right Nav Section -->
 		    <ul class="right">
-		      <li class="active"><a href="#"><span class="Bold">Discover</span></a></li>
-		      <li class="active"><a href="#"><span class="Bold">Reasons</span></a></li>
-		      <li class="active"><a href="#"><span class="Bold">Apply</span></a></li>
-		      <li class="active"><a href="#"><span class="Bold">Contact</span></a></li>
+		      <li class="active"><a href="#about" id="navScrollAbout"><span class="Bold" id="DiscoverOn">Discover</span></a></li>
+		      <li class="active"><a href="#reasons" id="navScrollReasons"><span class="Bold" id="ReasonsOn">Reasons</span></a></li>
+		      <li class="active"><a href="#compare" id="navScrollCompare"><span class="Bold" id="CompareOn">Compare</span></a></li>
 
+		      <li class="active"><a href="#apply" id="navScrollApply"><span class="Bold" id="ApplyOn">Apply</span></a></li>
 
 		    </ul>
 		  </section>
 		</nav>
 	</div>
 
-
-	<ul class="example-orbit" data-orbit data-options="animation: 'fade'; slide_number: false; timer_speed: 2000; pause_on_hover: false; bullets: false;">
+	<ul class="example-orbit" id="home" data-orbit data-options="animation: 'fade'; slide_number: false; timer_speed: 2000; pause_on_hover: false; bullets: false;">
 	  <li>
-	    <img src="./bg.jpg" alt="slide 1" />
-	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
+	    <img src="./data/pics/bg.jpg" alt="slide 1" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><span class="show-for-medium-up"><a href="#about" id="orb1" class="button radius"><span class="buttonText ">Get Started</span></a></span></div>
 	  </li>
 	  <li class="active">
-	    <img src="./bg2.jpg" alt="slide 2" />
-	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
-
+	    <img src="./data/pics/bg2.jpg" alt="slide 2" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><span class="show-for-medium-up"><a href="#about" id="orb2" class="button radius"><span class="buttonText ">Get Started</span></a></span></div>
 	  </li>
 	  <li>
-	    <img src="./bg3.jpg" alt="slide 3" />
-	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
-
+	    <img src="./data/pics/bg3.jpg" alt="slide 3" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><span class="show-for-medium-up"><a href="#about" id="orb3" class="button radius"><span class="buttonText ">Get Started</span></a></span></div>
 	  </li>
 	  <li>
-	    <img src="./bg4.jpg" alt="slide 3" />
-	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Get Started</span></a></div>
-
+	    <img src="./data/pics/bg4.jpg" alt="slide 3" />
+	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><span class="show-for-medium-up"><a href="#about" id="orb4" class="button radius"><span class="buttonText ">Get Started</span></a></span></div>
 	  </li>
 	</ul>
-
-	<div class="row" style="margin-top: 3em">
-		<div class="large-1 columns"></div>
-		<div class="large-7 large-offset-1 columns" id="videoModalContainer">
+	<div class="row" style="margin-top: 3em" id="about">
+		<div class="medium-1 columns"></div>
+		<div class="medium-7 medium-offset-1 columns" id="videoModalContainer">
 			<span class="videoText">A community where students and faculty are actively integrated</span><br><span class="videoDescription">See how we combine physics and pop culture and demonstrate our school pride through meaningful traditions. It's not just about increasing ranking numbers, but about fostering exclusive experiences.</span>
 		</div>
-		<div class="large-3 columns text-center" >
-			<a href="#" data-reveal-id="videoModal"><img id="modalThumbnail" src="http://i.imgur.com/WTMH5r7.jpg" /></a>
+		<div class="medium-3 columns text-center" id="modalmargins">
+			<a href="#" data-reveal-id="videoModal" ><img id="modalThumbnail" src="http://i.imgur.com/WTMH5r7.jpg" /></a>
 
 			<div id="videoModal" class="reveal-modal large" data-reveal="">
 			  <div class="flex-video widescreen vimeo" style="display: block;">
-			    <iframe width="1280" height="720" src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0" frameborder="0" allowfullscreen="" data-src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0"></iframe>
+			    <iframe src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0" frameborder="0" allowfullscreen="" data-src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0"></iframe>
 			  </div>
 
 			  <a class="close-reveal-modal">&#215;</a>
 			</div>
 		</div>
-		<div class="large-1 columns"></div>
+		<div class="medium-1 columns"></div>
 	</div>
 
 	<div class="row" style="margin-top: 3em">
@@ -87,43 +82,102 @@
 	</div>
 
 
-	<div class="row" style="margin-top: 3em;">
+	<div class="row" style="margin-top: 3em;" id="reasons">
 		<div class="large-12 columns text-center"><span class="columnText">Why Orange and Blue</span></div>
 
 	</div>
 
 	<div class="row" style="margin-top: 5em;">
-		<div class="large-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
+		<div class="medium-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
 			<span class="whyText">Leadership</span><br>
 			<span class="whyDescription">Get Involved and Lead in One of Thousands of Student Organizations</span>
 		</div>
-		<div class="large-4 columns text-center"><i class="fa fa-university fa-3x"></i><br>
+		<div class="medium-4 columns text-center"><i class="fa fa-university fa-3x"></i><br>
 			<span class="whyText">Education</span><br>
 			<span class="whyDescription">Receive a Degree from a Top Public School in the Nation</span>
 		</div>
-		<div class="large-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
+		<div class="medium-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
 			<span class="whyText">Opportunity</span><br>
 			<span class="whyDescription">Semiannual Career Fairs and Networking Events from Fortune 500 Companies</span>
 		</div>
 	</div>
-	<div class="row" style="margin-top: 4em;">
-		<div class="large-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
+	<div class="row" id="secondcolumnrow" style="margin-top: 4em">
+		<div class="medium-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
 			<span class="whyText">Network</span><br>
 			<span class="whyDescription">Create New Relationships and Form Connections for the Future</span>
 		</div>
-		<div class="large-4 columns text-center"><i class="fa fa-university fa-3x"></i><br>
+		<div class="medium-4 columns text-center"><i class="fa fa-cogs fa-3x"></i><br>
 			<span class="whyText">Research</span><br>
 			<span class="whyDescription">Help Solve Some of the World's Most Difficult Problems</span>
 		</div>
-		<div class="large-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
+		<div class="medium-4 columns text-center"><i class="fa fa-globe fa-3x"></i><br>
 			<span class="whyText">Competition</span><br>
 			<span class="whyDescription">Join the Big 10 Family and Support Our Huge School Spirit</span>
 		</div>
 	</div>
 
-	<div class="row" style="margin-top: 5em">
+	<div class="row" style="margin-top: 3em">
+		<div class="large-12 columns" id="borderline"></div>
+
+	</div>
+
+<div ng-app="CompareAngular">
+	<div ng-controller="CompareAngularCtrl">
+	<div class="row" style="margin-top: 3em" id="compare">
+		<div class="large-12 columns text-center"><span class="columnText">Scope the Competition</span></div>
+	</div>
+	<div class="row">
+		<div class="large-12 columns text-center"><span class="videoDescription">Comapare us to another school and see the difference</span></div>
+	</div>
+	<div class="row">
+		<div class="small-3 columns"></div>
+		<div class="small-6 small-offset-3 columns text-center"><select align="center" ng-model="query.name" ng-init="query.name='Andrews University'"><option  ng-repeat="pick in colleges" value="{{pick.name}}">{{pick.name}}</option></select>
+		</div>
+		<div class="small-3 columns"></div>
+
+	</div>
+	<div class="row" style="margin-top: 3em" >
+		<div class="large-6 columns text-center panel" style="border-radius: 6px" >
+		      <span class="collegeName">University of Illinois Urbana-Champaign</span><br>
+		      <span class="whyText">In-state annual cost: <span class="gray">$29086</span></span><br>
+		      <span class="whyText">Out-state annual cost: <span class="gray">$43468</span></span><br>
+		      <span class="whyText">Acceptance Rate: <span class="gray">62%</span></span><br>
+		      <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">35%</span> accept our offer</span><br>
+		      <span class="whyText">Graduation Rate: <span class="gray">84%</span></span><br>
+		      <span class="whyText">Total Enrollment: <span class="gray">44942 Students</span></span><br>
+		      <span class="whyText">Student Faculty Ratio: <span class="gray">20:1</span></span><br>
+
+
+		</div>
+		<div class="large-6 columns text-center panel " style="border-radius: 6px" id="otherSchool">
+
+			    <div ng-repeat="college in colleges | filter:query">
+			      <span class="collegeName">{{college.name}}</span><br>
+			      <span class="whyText">In-state annual cost: <span class="gray">${{college.instatecost}}</span></span><br>
+			      <span class="whyText">Out-state annual cost: <span class="gray">${{college.outstatecost}}</span></span><br>
+			      <span class="whyText">Acceptance Rate: <span class="gray">{{college.percentadmitted}}%</span></span><br>
+			      <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">{{college.admissionyield}}%</span> accept the offer</span><br>
+		      	  <span class="whyText">Graduation Rate: <span class="gray">{{college.gradrate}}%</span></span><br>
+		      	  <span class="whyText">Total Enrollment: <span class="gray">{{college.totalenrollment}} Students</span></span><br>
+		      	  <span class="whyText">Student Faculty Ratio: <span class="gray">{{college.studentfacultyratio}}:1</span></span><br>
+
+			    </div>
+
+		</div>
+
+	</div>
+	</div>
+</div>
+
+	<div class="row" style="margin-top: 3em">
+		<div class="large-12 columns" id="borderline"></div>
+
+	</div>
+
+
+	<div class="row" style="margin-top: 3em" id="apply">
 		<div class="large-12 columns"><div class="admissionImage">
-			<div class="imageText"><span class="bgText">Become an Illini Today!</span><br><a href"#" class="button radius getStarted"><span class="buttonText">Learn More</span></a></div>
+			<div class="imageText"><span class="bgText">Become an Illini Today!</span><br><a href="http://admissions.illinois.edu/apply/" class="button radius getStarted"><span class="buttonText">Learn More</span></a></div>
 
 		</div></div>
 
@@ -136,12 +190,12 @@
 	</div>
 	<div class="row" style="margin-top: .5em; margin-bottom: 3em;">
 		<div class="large-4 columns"></div>
-		<div class="large-1 columns large-offset-4 text-center"><a href="https://www.facebook.com/illinois.edu"><i class="fa fa-facebook-square fa-3x socialIcons"></i></a></div>
-		 <div class="large-1 columns text-center"><a href="https://twitter.com/illinois_alma"><i class="fa fa-twitter-square fa-3x socialIcons"></i></a></div>
-
-    	<div class="large-1 columns text-center"><a href="https://www.linkedin.com/edu/university-of-illinois-at-urbana-champaign-18321"><i class="fa fa-linkedin-square fa-3x socialIcons"></i></a></div>
-
-    	<div class="large-1 columns text-center"><a href="https://plus.google.com/115050777244952217317"><i class="fa fa-google-plus-square fa-3x socialIcons"></i></a></div>
+		<div class="large-4 columns large-offset-4 text-center">
+			<a href="https://www.facebook.com/illinois.edu"><i class="fa fa-facebook-square fa-3x socialIcons"></i></a>
+			<a href="https://twitter.com/illinois_alma"><i class="fa fa-twitter-square fa-3x socialIcons"></i></a>
+			<a href="https://www.linkedin.com/edu/university-of-illinois-at-urbana-champaign-18321"><i class="fa fa-linkedin-square fa-3x socialIcons"></i></a>
+			<a href="https://plus.google.com/115050777244952217317"><i class="fa fa-google-plus-square fa-3x socialIcons"></i></a>
+		</div>
 		<div class="large-4 columns"></div>
 
 	</div>

@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row panel">
+      <div class="small-12 text-center columns">
+      	<span class="imdbDetailSubTitle">Choose a decade and see the greatest hits of its time!</span><br>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1940;">Classics</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1950;">Fifties</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1960;">Sixties</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1970;">Seventies</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1980;">Eighties</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year1990;">Nineties</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year2000;">Milleniums</a>
+        <a href="" class="movies button info radius tiny" ng-click="Decade=year2010plus;">Modern</a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="small-12 columns">
+        <!--Body content--><!--
+        <ul class="phones">
+          <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+            <span>{{phone.title}}</span>
+            <p>{{phone.rank}}</p>-->
+        
+  
+<!-- The Timeline -->
+<div class="imdbTimeline" >
+<ul class="moviet timeline" style="margin-top: 180px !important">
+
+	<!-- Item 1 -->
+  
+	<!-- Item 2 -->
+    <div ng-repeat="movie in Decade">
+    	<li style="margin-top: -200px !important;">
+    		<div ng-class-odd="'direction-l'" ng-class-even="'direction-r'">
+			<div class="flag-wrapper">
+				<a href="imdb250.html#/movies/{{movie.rank}}" style="display: inline; margin: 0; padding: 0"><span class="flag imdbSearchTitle">{{movie.title}}</span></a>
+				<span class="time-wrapper"><span class="time">{{movie.released}}</span></span>
+			</div>
+			<div class="desc"><span class="imdbBold">Rank:</span> {{movie.rank}}</p><br style="line-height: 2px; content: ' ';"><a href="imdb250.html#/movies/{{movie.rank}}" style="display: inline"><img ng-src="/data/images/{{movie.imdbID}}.jpg" style="border-radius: 5px; max-height: 150px, margin: 0; padding: 0"></a></div>
+		</div>
+		</li>
+	</div>
+
+	<!-- Item 3 -->
+
+</ul>
+</div>
+         
+
+      </div>
+
+    </div>
+</div>
+

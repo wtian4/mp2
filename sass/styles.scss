@@ -4,3 +4,40 @@
 @import "variables";
 @import "mixins";
 @import "base";
+@import "imdb";
+
+
+
+@media only screen and (max-width: 724px) {
+	.imageTitleText {font-size: 2rem;}
+}
+
+@media only screen and (max-width: 360px) {
+	.imageTitleText {font-size: 1.5rem;}
+	.imageDescription{font-size: .8rem;}
+	.socialText{ font-size: 1.8rem;}
+	.bgText {font-size: 1.2rem;}
+
+}
+
+@media only screen and (max-width: 624px) {
+	#secondcolumnrow {margin-top: 0 !important;}
+	#otherSchool {margin-top: 2em !important;}
+	#modalmargins {margin-top: 2em !important;}
+}
+
+@media only screen and (max-width: 642px) {
+	.Normal{font-size: 0 !important;}
+	#collegetitle{font-size: 0!important;}
+}
+
+
+@media only screen and (max-width: 578px) {
+	.bgText {font-size: 1.5rem;}
+}
+
+@media only screen and (max-width: 450) {
+	#collegetitle {font-size: 0px;}
+}
+
+
