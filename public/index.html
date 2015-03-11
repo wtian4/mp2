@@ -8,13 +8,15 @@
   <link rel="stylesheet" href="./css/styles.css">
   <link rel="stylesheet" href="./foundation/css/foundation.css">
   <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
+  <link rel="shortcut icon" type="image/png" href="./data/pics/favi.png"/><!--Favicon-->
 
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 </head>
 
 
 <body style="overflow-x: hidden">
+
+	<!-- NAV BAR -->
 	<div class="contain-to-grid sticky fixed">
 		<nav class="top-bar" data-topbar role="navigation">
 		  <ul class="title-area">
@@ -31,14 +33,13 @@
 		      <li class="active"><a href="#about" id="navScrollAbout"><span class="Bold" id="DiscoverOn">Discover</span></a></li>
 		      <li class="active"><a href="#reasons" id="navScrollReasons"><span class="Bold" id="ReasonsOn">Reasons</span></a></li>
 		      <li class="active"><a href="#compare" id="navScrollCompare"><span class="Bold" id="CompareOn">Compare</span></a></li>
-
 		      <li class="active"><a href="#apply" id="navScrollApply"><span class="Bold" id="ApplyOn">Apply</span></a></li>
-
 		    </ul>
 		  </section>
 		</nav>
 	</div>
 
+	<!-- CAROUSEL -->
 	<ul class="example-orbit" id="home" data-orbit data-options="animation: 'fade'; slide_number: false; timer_speed: 2000; pause_on_hover: false; bullets: false;">
 	  <li>
 	    <img src="./data/pics/bg.jpg" alt="slide 1" />
@@ -57,6 +58,8 @@
 	    	<div class="imageText"><span class="imageTitleText">Your Future Starts Here</span><br><span class="imageDescription">Discover what it means to be a Illini</span><br><span class="show-for-medium-up"><a href="#about" id="orb4" class="button radius"><span class="buttonText ">Get Started</span></a></span></div>
 	  </li>
 	</ul>
+
+	<!-- VIDEO MODEL -->
 	<div class="row" style="margin-top: 3em" id="about">
 		<div class="medium-1 columns"></div>
 		<div class="medium-7 medium-offset-1 columns" id="videoModalContainer">
@@ -64,29 +67,23 @@
 		</div>
 		<div class="medium-3 columns text-center" id="modalmargins">
 			<a href="#" data-reveal-id="videoModal" ><img id="modalThumbnail" src="http://i.imgur.com/WTMH5r7.jpg" /></a>
-
 			<div id="videoModal" class="reveal-modal large" data-reveal="">
 			  <div class="flex-video widescreen vimeo" style="display: block;">
 			    <iframe src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0" frameborder="0" allowfullscreen="" data-src="http://www.youtube-nocookie.com/embed/ic2JQ_8i_FQ?rel=0"></iframe>
 			  </div>
-
 			  <a class="close-reveal-modal">&#215;</a>
 			</div>
 		</div>
 		<div class="medium-1 columns"></div>
 	</div>
 
-	<div class="row" style="margin-top: 3em">
-		<div class="large-12 columns" id="borderline"></div>
+	<!-- GRAY DIVIDER -->
+	<div class="row" style="margin-top: 3em"><div class="large-12 columns" id="borderline"></div></div>
 
-	</div>
+	<!-- REASONS HEADER -->
+	<div class="row" style="margin-top: 3em;" id="reasons"><div class="large-12 columns text-center"><span class="columnText">Why Orange and Blue</span></div></div>
 
-
-	<div class="row" style="margin-top: 3em;" id="reasons">
-		<div class="large-12 columns text-center"><span class="columnText">Why Orange and Blue</span></div>
-
-	</div>
-
+	<!-- REASONS FIRST ROW -->
 	<div class="row" style="margin-top: 5em;">
 		<div class="medium-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
 			<span class="whyText">Leadership</span><br>
@@ -101,6 +98,8 @@
 			<span class="whyDescription">Semiannual Career Fairs and Networking Events from Fortune 500 Companies</span>
 		</div>
 	</div>
+
+	<!-- REASONS SECOND ROW -->
 	<div class="row" id="secondcolumnrow" style="margin-top: 4em">
 		<div class="medium-4 columns text-center" ><i class="fa fa-users fa-3x"></i><br>
 			<span class="whyText">Network</span><br>
@@ -116,78 +115,68 @@
 		</div>
 	</div>
 
-	<div class="row" style="margin-top: 3em">
-		<div class="large-12 columns" id="borderline"></div>
+	<!-- GRAY DIVIDER -->
+	<div class="row" style="margin-top: 3em"><div class="large-12 columns" id="borderline"></div></div>
 
-	</div>
-
-<div ng-app="CompareAngular">
-	<div ng-controller="CompareAngularCtrl">
-	<div class="row" style="margin-top: 3em" id="compare">
-		<div class="large-12 columns text-center"><span class="columnText">Scope the Competition</span></div>
-	</div>
-	<div class="row">
-		<div class="large-12 columns text-center"><span class="videoDescription">Comapare us to another school and see the difference</span></div>
-	</div>
-	<div class="row">
-		<div class="small-3 columns"></div>
-		<div class="small-6 small-offset-3 columns text-center"><select align="center" ng-model="query.name" ng-init="query.name='Andrews University'"><option  ng-repeat="pick in colleges" value="{{pick.name}}">{{pick.name}}</option></select>
+	<!-- COMPARE -->
+	<div ng-app="CompareAngular">
+		<div ng-controller="CompareAngularCtrl">
+			<div class="row" style="margin-top: 3em" id="compare">
+				<div class="large-12 columns text-center"><span class="columnText">Scope the Competition</span></div>
+			</div>
+			<div class="row">
+				<div class="large-12 columns text-center"><span class="videoDescription">Comapare us to another school and see the difference</span></div>
+			</div>
+			<div class="row">
+				<div class="small-3 columns"></div>
+				<div class="small-6 small-offset-3 columns text-center"><select align="center" ng-model="query.name" ng-init="query.name='Andrews University'"><option  ng-repeat="pick in colleges" value="{{pick.name}}">{{pick.name}}</option></select>
+				</div>
+				<div class="small-3 columns"></div>
+			</div>
+			<div class="row" style="margin-top: 3em" >
+				<div class="large-6 columns text-center panel" style="border-radius: 6px" >
+				    <span class="collegeName">University of Illinois Urbana-Champaign</span><br>
+				    <span class="whyText">In-state annual cost: <span class="gray">$29086</span></span><br>
+				    <span class="whyText">Out-state annual cost: <span class="gray">$43468</span></span><br>
+				    <span class="whyText">Acceptance Rate: <span class="gray">62%</span></span><br>
+				    <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">35%</span> accept our offer</span><br>
+				    <span class="whyText">Graduation Rate: <span class="gray">84%</span></span><br>
+				    <span class="whyText">Total Enrollment: <span class="gray">44942 Students</span></span><br>
+				    <span class="whyText">Student Faculty Ratio: <span class="gray">20:1</span></span><br>
+				</div>
+				<div class="large-6 columns text-center panel " style="border-radius: 6px" id="otherSchool">
+			    	<div ng-repeat="college in colleges | filter:query">
+					    <span class="collegeName">{{college.name}}</span><br>
+					    <span class="whyText">In-state annual cost: <span class="gray">${{college.instatecost}}</span></span><br>
+					    <span class="whyText">Out-state annual cost: <span class="gray">${{college.outstatecost}}</span></span><br>
+					    <span class="whyText">Acceptance Rate: <span class="gray">{{college.percentadmitted}}%</span></span><br>
+					    <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">{{college.admissionyield}}%</span> accept the offer</span><br>
+				      	<span class="whyText">Graduation Rate: <span class="gray">{{college.gradrate}}%</span></span><br>
+				      	<span class="whyText">Total Enrollment: <span class="gray">{{college.totalenrollment}} Students</span></span><br>
+			      	  	<span class="whyText">Student Faculty Ratio: <span class="gray">{{college.studentfacultyratio}}:1</span></span><br>
+			    	</div>
+				</div>
+			</div>
 		</div>
-		<div class="small-3 columns"></div>
-
-	</div>
-	<div class="row" style="margin-top: 3em" >
-		<div class="large-6 columns text-center panel" style="border-radius: 6px" >
-		      <span class="collegeName">University of Illinois Urbana-Champaign</span><br>
-		      <span class="whyText">In-state annual cost: <span class="gray">$29086</span></span><br>
-		      <span class="whyText">Out-state annual cost: <span class="gray">$43468</span></span><br>
-		      <span class="whyText">Acceptance Rate: <span class="gray">62%</span></span><br>
-		      <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">35%</span> accept our offer</span><br>
-		      <span class="whyText">Graduation Rate: <span class="gray">84%</span></span><br>
-		      <span class="whyText">Total Enrollment: <span class="gray">44942 Students</span></span><br>
-		      <span class="whyText">Student Faculty Ratio: <span class="gray">20:1</span></span><br>
-
-
-		</div>
-		<div class="large-6 columns text-center panel " style="border-radius: 6px" id="otherSchool">
-
-			    <div ng-repeat="college in colleges | filter:query">
-			      <span class="collegeName">{{college.name}}</span><br>
-			      <span class="whyText">In-state annual cost: <span class="gray">${{college.instatecost}}</span></span><br>
-			      <span class="whyText">Out-state annual cost: <span class="gray">${{college.outstatecost}}</span></span><br>
-			      <span class="whyText">Acceptance Rate: <span class="gray">{{college.percentadmitted}}%</span></span><br>
-			      <span class="angulartext">&nbsp;&nbsp;&nbsp;of them, <span class="gray">{{college.admissionyield}}%</span> accept the offer</span><br>
-		      	  <span class="whyText">Graduation Rate: <span class="gray">{{college.gradrate}}%</span></span><br>
-		      	  <span class="whyText">Total Enrollment: <span class="gray">{{college.totalenrollment}} Students</span></span><br>
-		      	  <span class="whyText">Student Faculty Ratio: <span class="gray">{{college.studentfacultyratio}}:1</span></span><br>
-
-			    </div>
-
-		</div>
-
-	</div>
-	</div>
-</div>
-
-	<div class="row" style="margin-top: 3em">
-		<div class="large-12 columns" id="borderline"></div>
-
 	</div>
 
+	<!-- GRAY DIVIDER -->
+	<div class="row" style="margin-top: 3em"><div class="large-12 columns" id="borderline"></div></div>
 
+	<!-- APPLY -->
 	<div class="row" style="margin-top: 3em" id="apply">
 		<div class="large-12 columns"><div class="admissionImage">
 			<div class="imageText"><span class="bgText">Become an Illini Today!</span><br><a href="http://admissions.illinois.edu/apply/" class="button radius getStarted"><span class="buttonText">Learn More</span></a></div>
-
-		</div></div>
-
+			</div>
+		</div>
 	</div>
 
-
+	<!-- SOCIAL MEDIA HEADER -->
 	<div class="row" style="margin-top: 3em;">
 		<div class="large-12 columns text-center"><span class="socialText">Follow Us On Social Media</span></div>
-
 	</div>
+
+	<!-- SOCIAL MEDIA ICON -->
 	<div class="row" style="margin-top: .5em; margin-bottom: 3em;">
 		<div class="large-4 columns"></div>
 		<div class="large-4 columns large-offset-4 text-center">
@@ -197,15 +186,14 @@
 			<a href="https://plus.google.com/115050777244952217317"><i class="fa fa-google-plus-square fa-3x socialIcons"></i></a>
 		</div>
 		<div class="large-4 columns"></div>
-
 	</div>
 
-  <script src="./lib/jquery-2.1.3.min/index.js"></script>
-  <script src="./js/script.js"></script>
-  <script src="./foundation/js/foundation.min.js"></script>
-  <script src="http://localhost:35729/livereload.js"></script>
-   <script>
-    $(document).foundation();
-  </script>
+	<script src="./lib/jquery-2.1.3.min/index.js"></script>
+	<script src="./js/script.js"></script>
+	<script src="./foundation/js/foundation.min.js"></script>
+	<script src="http://localhost:35729/livereload.js"></script>
+	<script>
+	    $(document).foundation();
+	</script>
 </body>
 </html>

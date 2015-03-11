@@ -8,16 +8,32 @@ h1 {
 }
 
 .nav-active {
-        color:$gray;
-    }
+  color:$gray;
+}
 
 .top-bar {
   padding-top: 5px;
   height: 55px !important;
-    transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
+  transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+
+  .UltraThin {
+    @include font-style(100); 
+  }
+  .Thin {
+    @include font-style(300); 
+  }
+  .Normal {
+    @include font-style(400); 
+  }
+  .Bold {
+    @include font-style(700); 
+  }
+  .UltraBold {
+    @include font-style(900); 
+  }
 }
 
 .heightback {
@@ -32,37 +48,6 @@ h1 {
 .test {
   font-size: 1.2rem;
   color: $blue;
-
-}
-
-.UltraThin {
-  font-weight: 100;
-  font-family: $font_primary;
-}
-
-.Thin {
-  font-weight: 300;
-  font-family: $font_primary;
-}
-
-.Normal {
-  font-weight: 400;
-  font-family: $font_primary;
-
-
-}
-
-.Bold {
-  font-weight: 700;
-  font-family: $font_primary;
-
-}
-
-.UltraBold {
-
-  font-weight: 900;
-  font-family: $font_primary;
-     
 }
 
 .orbit-timer {
@@ -74,55 +59,42 @@ h1 {
   width: 1px;
 }
 
-
 .imageText {
   position: absolute;
   text-align: center;
   width: 100%;
-  
   //top: XX -- is set by javascript to be responsive
 }
 
 .imageTitleText {
-  font-weight: 900;
-  font-family: $font_primary;
+  @include font-style(900); 
   color: $white;
   font-size: 3rem;
 }
 
 .imageDescription {
-  font-weight: 400;
-  font-family: $font_primary;
+  @include font-style(400); 
   color: $white;
   font-size: 1.2rem;
 }
 
-.getStarted {
-
-
-}
-
 .buttonText {
-  font-weight: 400;
-  font-family: $font_primary;
+  @include font-style(400); 
   color: $white;
 }
 
 .videoText {
-  font-weight: 700;
-  font-family: $font_primary;
+  @include font-style(700); 
   color: $black;
   font-size: 2rem;
   line-height: 70%;
 }
 
 .videoDescription {
-  font-weight: 300;
-  font-family: $font_primary;
+  @include font-style(300); 
   color: $gray;
   font-size: 1.3rem;
   line-height: 90%;
-
 }
 
 #margintop {
@@ -133,10 +105,8 @@ h1 {
   margin-top: 5em;
 }
 
-
 #modalThumbnail {
   border-radius: $default-border-radius;
-
 }
 
 #borderline {
@@ -144,28 +114,24 @@ h1 {
 }
 
 .columnText {
-  font-weight: 700;
-  font-family: $font_primary;
+  @include font-style(400); 
   color: $black;
   font-size: 2rem;
 }
 
 .whyText {
-  font-weight: 400;
-  font-family: $font_primary;
+  @include font-style(400); 
   color: $black;
   font-size: 1.2rem;
-
 }
 
 .whyDescription {
-  font-weight: 300;
-  font-family: $font_primary;
+  @include font-style(300); 
   color: $gray;
 }
 
 .admissionImage {
-  background: url("http://i.imgur.com/1t7FVrI.jpg");
+  background: $bg-url;
   border-radius: 6px;
   width: 100%;
   height: 30em;
@@ -176,16 +142,14 @@ h1 {
 }
 
 .bgText {
-  font-weight: 700;
-  font-family: $font_primary;
+  @include font-style(700); 
   color: $white;
   font-size: 3rem;
 
 }
 
 .socialText {
-  font-weight: 400;
-  font-family: $font_primary;
+  @include font-style(400); 
   color: $black;
 }
 
@@ -195,15 +159,9 @@ h1 {
     margin-left: .1em;
     margin-right: .1em;
 }
-/*
-.secondcolumnrow {
-  margin-top: 4em;
-}
-*/
 
 .collegeName {
-  font-weight: 700;
-  font-family: $font_primary;
+  @include font-style(700); 
   color: $black;
   font-size: 1.6rem;
 }
@@ -213,14 +171,12 @@ h1 {
 }
 
 .angulartext {
-  font-weight: 300;
-  font-family: $font_primary;
+  @include font-style(300); 
   color: $black;
 }
 
 .whyHeader {
-  font-weight: 700;
-  font-family: $font_primary;
+  @include font-style(700); 
   color: $black;
   font-size: 1.2rem;
 

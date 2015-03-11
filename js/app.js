@@ -4,6 +4,7 @@ var moviecatApp = angular.module('moviecatApp', [
   'moviecatAnimations'
 ]);
 
+//ROUTES
 moviecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
@@ -28,11 +29,12 @@ moviecatApp.config(['$routeProvider',
       });
   }]);
 
+
+//LOAD FOUNDATION CORRECTLY
 moviecatApp.run(function($rootScope) {
     $rootScope.$on('$viewContentLoaded', function () {
         $(document).foundation();
     });
 });
 
-//$('.direction-l').replaceWith("<div class='direction-r'>");
 
