@@ -1,4 +1,3 @@
-angular.module('moviecatAnimations', ['ngAnimate']); //init ngAnimate
 
 var moviecatControllers = angular.module('moviecatControllers', []);
 
