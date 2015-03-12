@@ -5,7 +5,7 @@ var moviecatControllers = angular.module('moviecatControllers', []);
 //LIST CONTROLLER
 moviecatControllers.controller('MovieListCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('/data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
       $scope.movies = data;
     });
 
@@ -15,7 +15,7 @@ moviecatControllers.controller('MovieListCtrl', ['$scope', '$http',
 //DETAIL CONTROLLER
 moviecatControllers.controller('MovieDetailCtrl', ['$scope', '$routeParams', '$http',
   function($scope, $routeParams, $http) {
-    $http.get('/data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
       $scope.movie = data[$routeParams.rank-1];
 
       //LEFT AND RIGHT ARROW EDGE CASES
@@ -33,7 +33,7 @@ moviecatControllers.controller('MovieDetailCtrl', ['$scope', '$routeParams', '$h
 //GALLERY CONTROLLER
 moviecatControllers.controller('MovieGalleryCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('/data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
       $scope.movieg = data;
     });
 }]);
@@ -41,7 +41,7 @@ moviecatControllers.controller('MovieGalleryCtrl', ['$scope', '$http',
 //TIMELINE CONTROLLER
 moviecatControllers.controller('MovieTimelineCtrl', ['$scope', '$http',
   function ($scope, $http) {
-    $http.get('/data/imdb250.json').success(function(data) {
+    $http.get('./data/imdb250.json').success(function(data) {
     
       //INIT DECADE ARRAYS
       var year1940 = [];
@@ -109,7 +109,7 @@ moviecatControllers.controller('MovieTimelineCtrl', ['$scope', '$http',
 //DATA OBTAINED FROM https://data.gov
 var CompareAngular = angular.module('CompareAngular', []);
 CompareAngular.controller('CompareAngularCtrl', function ($scope, $http) {
-  $http.get('/data/college.json').success(function(data) {
+  $http.get('./data/college.json').success(function(data) {
     $scope.colleges = data;
   });
 });
