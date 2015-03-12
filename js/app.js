@@ -8,24 +8,24 @@ var moviecatApp = angular.module('moviecatApp', [
 moviecatApp.config(['$routeProvider',
   function($routeProvider) {
     $routeProvider.
-      when('/movies', {
+      when('./movies', {
         templateUrl: 'partials/list.html',
         controller: 'MovieListCtrl'
       }).
-      when('/movies/:rank', {
+      when('./movies/:rank', {
         templateUrl: 'partials/details.html',
         controller: 'MovieDetailCtrl'
       }).
-       when('/gallery', {
+       when('./gallery', {
         templateUrl: 'partials/gallery.html',
         controller: 'MovieGalleryCtrl'
       }).
-       when('/timeline', {
+       when('./timeline', {
         templateUrl: 'partials/timeline.html',
         controller: 'MovieTimelineCtrl'
       }).
       otherwise({
-        redirectTo: '/movies'
+        redirectTo: './movies'
       });
   }]);
 
