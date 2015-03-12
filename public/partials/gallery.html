@@ -31,7 +31,7 @@
   <div class="small-10 small-offset-1 text-center">
     <ul class="movieg large-block-grid-8 medium-block-grid-6 small-block-grid-4">
       <li ng-repeat="movie in movieg | filter:query:strict | orderBy:rank">
-        <a href="imdb250.html#/movies/{{movie.rank}}" class="thumb"><img ng-src="/data/images/{{movie.imdbID}}.jpg"></a><br>
+        <a href="imdb250.html#/movies/{{movie.rank}}" class="thumb"><img ng-src="./data/images/{{movie.imdbID}}.jpg"></a><br>
       </li>
     </ul>
   </div>

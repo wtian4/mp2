@@ -21,8 +21,8 @@
   <div class="small-4"></div>
   <div class="small-4 small-offset-4 text-center">
     <ul class="movies small-block-grid-1">
-      <li ng-repeat="movie in movies | filter:query | orderBy:orderProp:reverse" class="panel phone-listing" style="padding-top: 20px;" >
-        <a href="imdb250.html#/movies/{{movie.rank}}"><img ng-src="/data/images/{{movie.imdbID}}.jpg" style="max-height: 300px"></a><br>
+      <li ng-repeat="movie in movies | filter:query | orderBy:orderProp:reverse" class="panel" style="padding-top: 20px;" >
+        <a href="imdb250.html#/movies/{{movie.rank}}"><img ng-src="./data/images/{{movie.imdbID}}.jpg" style="max-height: 300px"></a><br>
         <a href="imdb250.html#/movies/{{movie.rank}}"><span class="imdbSearchTitle">{{movie.title}}</span></a>
         <p class="imdbSearchDesc">Rank: {{movie.rank}}</p>
       </li>
