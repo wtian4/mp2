@@ -7,6 +7,11 @@ h1 {
   color: lighten($orange, 25);
 }
 
+footer {
+  height: 5em;
+  background-color: #333333;
+}
+
 .nav-active {
   color:$gray;
 }
@@ -114,7 +119,7 @@ h1 {
 }
 
 .columnText {
-  @include font-style(400); 
+  @include font-style(700); 
   color: $black;
   font-size: 2rem;
 }
@@ -150,6 +155,7 @@ h1 {
 
 .socialText {
   @include font-style(400); 
+  font-size: 1.5rem;
   color: $black;
 }
 

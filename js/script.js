@@ -3,32 +3,13 @@ $(document).ready(function(){
   //These Offsets determine the offsets when the hamburger top-bar expands in height
   var navOffset;
   var extraOffset;
-  if ($(window).outerWidth() < 624){
-      navOffset = 240;
-      extraOffset = 10;
-    }
-  else {
-      navOffset = 45;
-      extraOffset = 0;
-    }
 
-  $(window).resize(function(){
-  if ($(window).outerWidth() < 624){
-      if ($(window).width() >= screen.width){
-          navOffset = 45;
-          extraOffset = 0;
-      }
-      else { 
-        navOffset = 240;
-        extraOffset = 10;
-      }
-    }
-  else {
+  /* The Hamburger Icon closes after selecting a destination */
+  $('#navScrollAbout, #navScrollReasons, #navScrollCompare, #navScrollApply').click(function(evt){
+    $('.menu-icon').click();
       navOffset = 45;
       extraOffset = 0;
-    }
   });
-
 
   /* Navigation Smooth Scrolling */
    $('#navScrollHome, #navScrollApply, #navScrollCompare, #navScrollAbout, #navScrollReasons, #orb1, #orb2, #orb3, #orb4').click(function(){
@@ -93,17 +74,14 @@ $(document).ready(function(){
   $(window).resize(function(){
   	$(".imageText").css({"top": $(".example-orbit").outerHeight()/4});
   });
-
-  /* The Hamburger Icon closes after selecting a destination */
-  $('#navScrollAbout, #navScrollReasons, #navScrollCompare, #navScrollApply').click(function(evt){
-    $('.menu-icon').click();
-  });
     
   /* Adjusts Height of NavBar when hamburger icon is selected*/
   var hamburgered = false;
   $('.menu-icon').click(function(){
     if (!hamburgered && $(window).outerWidth() < 624){
       $('.top-bar').addClass("heightlarge");
+        navOffset = 240;
+        extraOffset = 10;
         hamburgered = true;
       }
     else if (hamburgered && $(window).outerWidth() < 624){
