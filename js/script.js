@@ -1,8 +1,8 @@
 $(document).ready(function(){
 
   //These Offsets determine the offsets when the hamburger top-bar expands in height
-  var navOffset;
-  var extraOffset;
+  var navOffset = 45;
+  var extraOffset = 0;
 
   /* The Hamburger Icon closes after selecting a destination */
   $('#navScrollAbout, #navScrollReasons, #navScrollCompare, #navScrollApply').click(function(evt){
@@ -45,6 +45,12 @@ $(document).ready(function(){
       }
     else 
         $('#DiscoverOn').removeClass("nav-active");
+    if($(window).scrollTop() + $(window).height() == $(document).height()) {
+        $('#ApplyOn').addClass("nav-active");        
+        $('#CompareOn').removeClass("nav-active");
+        $('#ReasonsOn').removeClass("nav-active");
+        $('#DiscoverOn').removeClass("nav-active");
+      }
   });
 
   /* Adjusts the Nav Bar height and font shrink */
@@ -69,14 +75,18 @@ $(document).ready(function(){
       }
   });
 
+  var hamburgered = false;//is my dropdown open
   /* Ensure that the Image Overlay on the Carousel is always in the proportionally right position */
   $(".imageText").css({"top": $(".example-orbit").outerHeight()/4});
   $(window).resize(function(){
   	$(".imageText").css({"top": $(".example-orbit").outerHeight()/4});
+    if (($(window).outerWidth() > 623)){
+        $('.top-bar').removeClass("heightlarge");
+        hamburgered = false;
+    }
   });
     
   /* Adjusts Height of NavBar when hamburger icon is selected*/
-  var hamburgered = false;
   $('.menu-icon').click(function(){
     if (!hamburgered && $(window).outerWidth() < 624){
       $('.top-bar').addClass("heightlarge");
